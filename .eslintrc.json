@@ -7,7 +7,7 @@
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "rules":{
+  "rules": {
     "react/jsx-props-no-spreading": 1,
     "@typescript-eslint/comma-dangle": 0,
     "max-len": ["error", { "code": 120, "tabWidth": 2, "ignoreStrings": true }]
