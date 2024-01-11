@@ -1,5 +1,4 @@
 import React from 'react';
-import type { AppProps } from 'next/app';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
@@ -11,10 +10,14 @@ config.autoAddCss = false;
 
 const inter = Inter({ subsets: ['latin'] });
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <div className={inter.className}>
-      <Component {...pageProps} />
-    </div>
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
+    </html>
   );
 }
