@@ -1,5 +1,5 @@
 import React from 'react';
-import NavPage from '@/components/page/NavPage';
+import NavPage from '@/components/page/nav-page/NavPage';
 import Image from 'next/image';
 
 export default function AboutMe() {
