@@ -25,7 +25,7 @@ export default function HomeLink({
   className, href, title, description
 }: HomeLinkProps) {
   return (
-    <Link href={href} className={`flex flex-col justify-center content-stretch h-full p-10 lg:px-10 ${className}`}>
+    <Link href={href} className={`flex flex-col justify-center content-stretch h-full p-10 lg:px-10 rounded shadow ${className}`}>
       <span className="flex justify-center items-center basis-1/2 text-slate-800 text-4xl text-center p-4">
         {title}
       </span>
