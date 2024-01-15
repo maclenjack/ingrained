@@ -7,8 +7,10 @@
   "parserOptions": {
     "project": "./tsconfig.json"
   },
+  "plugins": ["jsx-a11y"],
   "rules": {
     "react/jsx-props-no-spreading": 1,
+    "react/require-default-props": 0,
     "@typescript-eslint/comma-dangle": 0,
     "max-len": ["error", { "code": 120, "tabWidth": 2, "ignoreStrings": true, "ignoreTemplateLiterals": true }]
   }
