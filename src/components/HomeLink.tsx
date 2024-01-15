@@ -1,3 +1,5 @@
+'use client';
+
 import React, { ReactNode } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -27,7 +29,7 @@ export default function HomeLink({
 }: HomeLinkProps) {
   const pathname = usePathname();
 
-  if (pathname.includes(href)) return null;
+  if (pathname != null && pathname.includes(href)) return null;
 
   return (
     <Link href={href} className={`flex flex-col justify-center content-stretch h-full p-10 lg:px-10 rounded shadow ${className}`}>
