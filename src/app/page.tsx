@@ -3,12 +3,13 @@ import Image from 'next/image';
 import Page from '@/components/page/Page';
 import HomeLink, { HomeLinkContainer } from '@/components/HomeLink';
 import SocialIcons from '@/components/SocialIcons';
+import logo from '../../public/logo.png';
 
 export default function Home() {
   return (
     <Page>
       <div className="box-border flex flex-col items-center h-auto p-10 py-20 w-full max-w-screen-xl">
-        <Image src="/logo.png" alt="logo" width={550} height={138} priority />
+        <Image className="h-auto" src={logo} alt="logo" width={550} priority />
         <SocialIcons size="large" />
         <div className="flex lg:flex-row flex-col justify-around items-center flex-grow w-full lg:max-w-none max-w-sm gap-20 my-10">
           <HomeLinkContainer bgColor="bg-orange-300">

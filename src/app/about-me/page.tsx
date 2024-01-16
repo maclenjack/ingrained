@@ -1,6 +1,7 @@
 import React from 'react';
 import NavPage from '@/components/page/nav-page/NavPage';
 import Image from 'next/image';
+import aboutMe from '../../../public/about-me.jpg';
 
 export default function AboutMe() {
   const getDescription = () => (
@@ -20,10 +21,9 @@ export default function AboutMe() {
         <div className="flex flex-col md:flex-row justify-around items-center gap-20 w-full max-w-screen-xl px-20 py-10">
           <Image
             className="object-cover bg-orange-300 p-6 rounded shadow"
-            src="/about-me.jpg"
+            src={aboutMe}
             alt="Picture of the artist"
             width={1085 / 3}
-            height={2048 / 3}
           />
           <div className="h-full flex flex-col gap-5 lg:gap-0 justify-end lg:justify-between py-0 lg:py-5">
             <h1 className="text-xl font-bold text-slate-800">about me</h1>
