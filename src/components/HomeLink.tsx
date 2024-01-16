@@ -32,15 +32,15 @@ export default function HomeLink({
   if (pathname != null && pathname.includes(href)) return null;
 
   return (
-    <Link href={href} className={`flex flex-col justify-center content-stretch h-full p-10 lg:px-10 rounded shadow ${className}`}>
-      <span className="flex justify-center items-center basis-1/2 text-slate-800 text-2xl md:text-4xl text-center p-4">
+    <Link href={href} className={`flex flex-col justify-center h-full p-10 lg:px-10 rounded shadow ${className}`}>
+      <h1 className="flex justify-center items-center basis-1/2 text-slate-800 text-2xl md:text-4xl text-center p-4">
         {title}
-      </span>
+      </h1>
       {
         description && (
-          <span className="flex justify-center basis-1/2 text-slate-600 text-lg text-center p-4">
+          <p className="flex justify-center basis-1/2 text-slate-600 text-lg text-center p-4">
             {description}
-          </span>
+          </p>
         )
       }
     </Link>

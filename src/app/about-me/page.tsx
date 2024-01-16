@@ -3,8 +3,8 @@ import NavPage from '@/components/page/nav-page/NavPage';
 import Image from 'next/image';
 
 export default function AboutMe() {
-  const getDescription = (hidden: boolean) => (
-    <p className={`text-slate-800 ${hidden ? 'lg:hidden' : 'max-lg:hidden'}`}>
+  const getDescription = () => (
+    <p className="text-slate-800">
       New Zealand Artist born and raised in Wellington.
       <br />
       <br />
@@ -25,13 +25,13 @@ export default function AboutMe() {
             width={1085 / 3}
             height={2048 / 3}
           />
-          <div className="h-full flex flex-col gap-5 lg:gap-0 justify-center lg:justify-between py-5">
+          <div className="h-full flex flex-col gap-5 lg:gap-0 justify-end lg:justify-between py-0 lg:py-5">
             <h1 className="text-xl font-bold text-slate-800">about me</h1>
             <h2 className="text-6xl lg:text-8xl text-orange-500">Diannella Thomas</h2>
-            {getDescription(false)}
+            <span className="max-lg:hidden">{getDescription()}</span>
           </div>
         </div>
-        <span className="p-10">{getDescription(true)}</span>
+        <span className="lg:hidden p-10">{getDescription()}</span>
       </div>
     </NavPage>
   );
